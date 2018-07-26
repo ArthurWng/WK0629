@@ -43,6 +43,9 @@ class test_abc(unittest.TestCase):
 
         live_room = backgroundPage(self.driver)  # 新建免费讲座话题
         live_room.new_free_topic()
+        
+        # 断言：UI、响应信息及数据检查
+        # assertEqual(实际结果，期望结果)
 
     def test_2_new_charge_topic(self):
         # 建新收费讲座话题
@@ -57,6 +60,10 @@ class test_abc(unittest.TestCase):
 
         intro_page = topicIntroPage(self.driver)  # 进入直播
         intro_page.enter_live()
+        
+        # 断言：UI、响应信息及数据检查
+        # assertEqual(实际结果，期望结果)
+        
 
 
     def test_3_new_encrypt_topic(self):
@@ -72,6 +79,9 @@ class test_abc(unittest.TestCase):
 
         intro_page = topicIntroPage(self.driver)  # 进入直播
         intro_page.enter_live()
+        
+        # 断言：UI、响应信息及数据检查
+        # assertEqual(实际结果，期望结果)
 
 
 
